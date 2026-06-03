@@ -70,7 +70,10 @@ public class TraversalPractice {
 
      // Replace the below line to create a tree 
      // as represented in the diagram above
-     Node<Integer> smallTree = null;
+     Node<Integer> smallTree = new Node<>(99,
+      new Node<>(45, new Node<>(9, null, null), new Node<>(5, null, null)),
+      new Node<>(82, null, new Node<>(16, null, null))
+     );
 
 
     /*
@@ -82,6 +85,8 @@ public class TraversalPractice {
      *    /    /  \          /
      *   3    19   25     76
     */
+
+  
 
     Node<Integer> largeTree = new Node<>(42,
         new Node<>(17, // 17 is left child of 42
